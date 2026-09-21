@@ -1,0 +1,12 @@
+biarkan x = 10;
+biarkan y = 20;
+
+jika (x < y) {
+    tampilkan("x lebih kecil");
+} kalau {
+    tampilkan("x lebih besar");
+}
+
+// Pengujian string literal mengandung keyword agar tidak salah translate
+biarkan pesan = "jika kamu membaca kalau ini, tetap aman";
+tampilkan(pesan);

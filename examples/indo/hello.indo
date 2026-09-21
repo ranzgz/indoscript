@@ -1,0 +1,7 @@
+biarkan nama = "Dunia";
+
+fungsi sapa(nama) {
+    tampilkan("Halo, " + nama + "!");
+}
+
+sapa(nama);

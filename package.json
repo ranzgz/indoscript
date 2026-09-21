@@ -1,0 +1,36 @@
+{
+  "name": "@arwildo/jawascript",
+  "version": "1.2.4",
+  "description": "JavaScript nganggo basa Jawa",
+  "type": "module",
+  "bin": {
+    "jawa": "./bin/jawa.js",
+    "indo": "./bin/indo.js",
+    "indoscript": "./bin/indo.js"
+  },
+  "keywords": [
+    "jawa",
+    "javascript",
+    "programming-language",
+    "esolang",
+    "fun"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arwildo/jawascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arwildo/jawascript/issues"
+  },
+  "homepage": "https://github.com/arwildo/jawascript#readme"
+}

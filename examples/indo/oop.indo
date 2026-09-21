@@ -1,0 +1,21 @@
+kelas Hewan {
+    konstruktor(nama) {
+        ini.nama = nama;
+        ini.berat = 0;
+    }
+
+    makan(kg) {
+        ini.berat = ini.berat + kg;
+        tampilkan(ini.nama + " makan " + kg + " kg");
+    }
+}
+
+kelas Kucing turunan Hewan {
+    suara() {
+        tampilkan(ini.nama + " bersuara: Meong!");
+    }
+}
+
+biarkan kucingku = baru Kucing("Milo");
+kucingku.makan(1);
+kucingku.suara();

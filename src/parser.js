@@ -23,8 +23,9 @@ const BINARY_PRECEDENCE = new Map([
   ["%", 7],
 ]);
 
-
 export function parse(tokens, membersMap = {}) {
+  let pos = 0; // <--- INI PERBAIKANNYA (Deklarasi pos ditambahkan di sini)
+
   function resolveName(name) {
     return Object.prototype.hasOwnProperty.call(membersMap, name) ? membersMap[name] : name;
   }

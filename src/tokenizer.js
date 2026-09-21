@@ -1,8 +1,11 @@
-import { KEYWORDS } from "./keywords.js";
-
-const KEYWORDS_SORTED = [...KEYWORDS]
-  .map(([jawa, js]) => ({ jawa, js }))
-  .sort((a, b) => b.jawa.length - a.jawa.length);
+export class JawaError extends Error {
+  constructor(message, line = null, col = null) {
+    super(message);
+    this.name = "JawaError";
+    this.line = line;
+    this.col = col;
+  }
+}
 
 const SYMBOLS = [
   "===",
@@ -44,21 +47,18 @@ const SYMBOLS = [
 
 const SYMBOLS_SORTED = [...SYMBOLS].sort((a, b) => b.length - a.length);
 
-export class JawaError extends Error {
-  constructor(message, line = null, col = null) {
-    super(message);
-    this.name = "JawaError";
-    this.line = line;
-    this.col = col;
-  }
-}
-
 const isIdentPart = (c) => c !== undefined && /[A-Za-z0-9_$]/.test(c);
 
 export function tokenize(source, keywordsList) {
+  const tokens = [];
+  let i = 0;
+  let line = 1;
+  let col = 1;
+
   const KEYWORDS_SORTED = [...keywordsList]
     .map(([jawa, js]) => ({ jawa, js }))
     .sort((a, b) => b.jawa.length - a.jawa.length);
+
   const advance = (n = 1) => {
     for (let k = 0; k < n; k++) {
       if (source[i] === "\n") {

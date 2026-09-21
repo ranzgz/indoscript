@@ -25,12 +25,12 @@
   "engines": {
     "node": ">=14"
   },
-  "repository": {
+ "repository": {
     "type": "git",
-    "url": "git+https://github.com/arwildo/jawascript.git"
+    "url": "git+https://github.com/ranzgz/indoscript.git"
   },
   "bugs": {
-    "url": "https://github.com/arwildo/jawascript/issues"
+    "url": "https://github.com/ranzgz/indoscript/issues"
   },
-  "homepage": "https://github.com/arwildo/jawascript#readme"
+  "homepage": "https://github.com/ranzgz/indoscript#readme"
 }

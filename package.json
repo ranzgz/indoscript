@@ -1,7 +1,7 @@
 {
   "name": "@rafxzflow/indoscript",
-  "version": "1.2.6",
-  "description": "JavaScript nganggo basa Jawa",
+  "version": "1.2.7",
+  "description": "JavaScript nganggo basa Jawa lan Indonesia",
   "type": "module",
   "bin": {
     "jawa": "./bin/jawa.js",
